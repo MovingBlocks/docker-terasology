@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:14.10
 MAINTAINER Marcel Otte <qwc+docker@mmo.to>
 RUN apt-get update && apt-get install -y openjdk-8-jre-headless
 RUN apt-get install -y wget unzip
