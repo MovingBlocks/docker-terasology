@@ -21,3 +21,7 @@ Best practice would be cloning this repository and using docker-compose to pull 
 There may be standard configurations in the future for specific use cases, may be... ;-)
 
 One thing's for sure, I'll keep this a little more updated after this long time of silence.
+
+More information about terasology can be found on following sites:
+* https://github.com/MovingBlocks/Terasology
+* http://terasology.org/
