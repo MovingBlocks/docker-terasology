@@ -1,5 +1,5 @@
 terasology:
-  image: qwick/terasology:latest
+  image: qwick/terasology:dev-latest
   ports:
     - 25777:25777
   volumes:
