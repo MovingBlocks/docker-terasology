@@ -6,6 +6,11 @@ check out and build with
 or use the image on dockerhub:
 https://registry.hub.docker.com/u/qwick/terasology/
 
+## Latest changes
+### 2016-03-16: [Alpha release 1; Engine v1.0.0](https://github.com/MovingBlocks/Terasology/releases/tag/v1.0.0)
+I'm again a little late with the docker image update, sorry! ;-)
+
+
 ## Small guide
 
 Be aware that this image provides a bare terasology server, if you want to enable specific modules, you have to do this yourself.
