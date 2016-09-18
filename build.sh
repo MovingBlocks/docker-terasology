@@ -9,6 +9,6 @@ source versionInfo.properties
 
 TAGNAME=$engineVersion-$displayVersion
 
-docker build -t qwick/terasology:$TAGNAME .
+docker build --no-cache -t qwick/terasology:$TAGNAME .
 
 docker push qwick/terasology:$TAGNAME
