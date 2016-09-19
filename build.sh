@@ -13,4 +13,9 @@ TAGNAME=dev-latest
 
 docker build --no-cache -t qwick/terasology:$TAGNAME .
 
+NEW_TAGNAME=dev-$engineVersion
+
+docker tag qwick/terasology:$TAGNAME qwick/terasology:$NEW_TAGNAME
+
 docker push qwick/terasology:$TAGNAME
+docker push qwick/terasology:$NEW_TAGNAME
