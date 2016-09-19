@@ -8,6 +8,8 @@ source versionInfo.properties
  docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
 TAGNAME=$engineVersion-$displayVersion
+echo The dev-latest build is: $TAGNAME
+TAGNAME=dev-latest
 
 docker build --no-cache -t qwick/terasology:$TAGNAME .
 
