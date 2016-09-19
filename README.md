@@ -1,15 +1,14 @@
 # docker-terasology
 
-check out and build with
-```docker build .```
+Automatic builds are provided by dockerhub and my own jenkins instance.
+For all enthusiasts who just want to have a running server:
+- `docker pull qwick/terasology:latest`
+- or with version: `docker pull qwick/terasology:1.2.1-alpha`
 
-or use the image on dockerhub:
-https://registry.hub.docker.com/u/qwick/terasology/
+For all developers who want a nightly build for debugging or just testing purposes:
+- `docker pull qwick/terasology:dev-latest` (a versioned tag is available too. Example: `dev-1.2.2-SNAPSHOT`)
 
-## Latest changes
-### 2016-03-16: [Alpha release 1; Engine v1.0.0](https://github.com/MovingBlocks/Terasology/releases/tag/v1.0.0)
-I'm again a little late with the docker image update, sorry! ;-)
-
+Versioned tags may change over time.
 
 ## Small guide
 
@@ -24,8 +23,6 @@ Best practice would be cloning this repository and using docker-compose to pull 
   4. Edit the generated config.cfg at the location of the mount and proceed with  until your server runs like you want.
 
 There may be standard configurations in the future for specific use cases, may be... ;-)
-
-One thing's for sure, I'll keep this a little more updated after this long time of silence.
 
 More information about terasology can be found on following sites:
 * https://github.com/MovingBlocks/Terasology
