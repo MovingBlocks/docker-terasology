@@ -6,9 +6,21 @@ For all enthusiasts who just want to have a running server:
 - or with version: `docker pull qwick/terasology:1.2.1-alpha`
 
 For all developers who want a nightly build for debugging or just testing purposes:
-- `docker pull qwick/terasology:dev-latest` (a versioned tag is available too. Example: `dev-1.2.2-SNAPSHOT`)
+- `docker pull qwick/terasology:nightly-latest`
+- a versioned tag is available too.
 
 Versioned tags may change over time.
+
+## Versioning
+
+To avoid confusion here the docker image tag schema:
+
+Stable:
+- `<engineVersion>-<displayVersion>` e.g. `1.2.1-alpha`
+
+Nightly:
+- `nightly-<engineVersion>-<buildNumber>` e.g. `nightly-1.2.2-SNAPSHOT-1806`
+
 
 ## Small guide
 
