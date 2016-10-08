@@ -5,7 +5,7 @@ For all enthusiasts who just want to have a running server:
 - `docker pull qwick/terasology:latest`
 - or with version: `docker pull qwick/terasology:1.2.1-alpha`
 
-For all developers who want a nightly build for debugging or just testing purposes:
+For all developers who want a unstable build for debugging or just testing purposes:
 - `docker pull qwick/terasology:unstable-latest`
 - a versioned tag is available too.
 
