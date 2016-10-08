@@ -9,11 +9,11 @@ source versionInfo.properties
 
 TAGNAME=$engineVersion-$displayVersion
 echo The dev-latest build is: $TAGNAME
-TAGNAME=nightly-latest
+TAGNAME=unstable-latest
 
 docker build --no-cache -t qwick/terasology:$TAGNAME .
 
-NEW_TAGNAME=nightly-$engineVersion-$buildNumber
+NEW_TAGNAME=unstable-$engineVersion-$buildNumber
 
 docker tag qwick/terasology:$TAGNAME qwick/terasology:$NEW_TAGNAME
 
