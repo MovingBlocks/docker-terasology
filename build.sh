@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm versionInfo.properties*
 
 wget http://jenkins.terasology.org/job/Terasology/lastSuccessfulBuild/artifact/build/resources/main/org/terasology/version/versionInfo.properties
 
