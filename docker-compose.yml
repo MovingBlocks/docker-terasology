@@ -1,6 +1,8 @@
-terasology:
-  image: qwick/terasology:latest
-  ports:
-    - 25777:25777
-  volumes:
-    - /mnt/data/docker/terasology:/terasology/server
+version: '2'
+services:
+    terasology:
+      image: qwick/terasology:latest
+      ports:
+        - 25777:25777
+      volumes:
+        - ./terasology:/terasology/server
