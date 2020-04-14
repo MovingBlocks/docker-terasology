@@ -72,7 +72,7 @@ jobs:
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
           
-          rm versionInfo.properties*
+          rm versionInfo.properties* || true
 
           if [ " ${TERASOLOGY_PROPERTIES_URL}" == " " ]; then
               if [ " ${TERASOLOGY_BUILD}" == " " ]; then
