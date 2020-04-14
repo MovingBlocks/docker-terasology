@@ -14,7 +14,6 @@ on:
   pull_request:
 
 env:
-  # TODO: Change variable to your image's name.
   IMAGE_NAME: terasology
 
 jobs:
@@ -56,7 +55,7 @@ jobs:
       - name: Push image
         run: |
           IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$IMAGE_NAME
-          
+
           # Change all uppercase to lowercase
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
 
@@ -71,16 +70,15 @@ jobs:
 
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
-          
+
           rm versionInfo.properties* || true
 
           if [ " ${TERASOLOGY_PROPERTIES_URL}" == " " ]; then
               if [ " ${TERASOLOGY_BUILD}" == " " ]; then
-                  source .env
-                  TERASOLOGY_PROPERTIES_URL=http://jenkins.terasology.org/job/TerasologyStable/lastSuccessfulBuild/artifact/build/resources/main/org/terasology/version/versionInfo.properties                                                          
+                  TERASOLOGY_PROPERTIES_URL=http://jenkins.terasology.org/job/TerasologyStable/lastSuccessfulBuild/artifact/build/resources/main/org/terasology/version/versionInfo.properties
               else
                   if [ " ${TERASOLOGY_BUILD}" == " unstable" ]; then
-                      TERASOLOGY_PROPERTIES_URL=http://jenkins.terasology.org/job/Terasology/lastSuccessfulBuild/artifact/build/resources/main/org/terasology/version/versionInfo.properties                                                            
+                      TERASOLOGY_PROPERTIES_URL=http://jenkins.terasology.org/job/Terasology/lastSuccessfulBuild/artifact/build/resources/main/org/terasology/version/versionInfo.properties
                   fi
               fi
           fi
