@@ -18,7 +18,7 @@ wget ${TERASOLOGY_PROPERTIES_URL}
 
 source versionInfo.properties
 
- docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+# docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
 TAGNAME=$engineVersion-$displayVersion
 
