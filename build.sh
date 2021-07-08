@@ -2,7 +2,8 @@
 
 rm versionInfo.properties*
 
-wget http://jenkins.terasology.org/job/Terasology/lastSuccessfulBuild/artifact/build/resources/main/org/terasology/version/versionInfo.properties
+#wget http://jenkins.terasology.org/job/Terasology/lastSuccessfulBuild/artifact/build/resources/main/org/terasology/version/versionInfo.properties
+wget http://jenkins.terasology.io/teraorg/job/Terasology/job/Omega/job/develop/lastSuccessfulBuild/artifact/distros/omega/versionInfo.properties
 
 source versionInfo.properties
 
